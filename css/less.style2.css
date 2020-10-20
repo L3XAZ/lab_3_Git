@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import "~bootstrap/dist/css/bootstrap.min.css";
+* {
+  transition: .3s all;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+.mynav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  background: linear-gradient(90deg, #ffff00, #00e676);
+  padding: 0 30px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.mynav__theme {
+  outline: none;
+  border: none;
+  padding: 8px 20px;
+  background: #e3002c;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.mynav__theme:active {
+  box-shadow: inset 0 0 20px -3px rgba(0, 0, 0, 0.6);
+}
+.mynav__menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mynav__item {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding: 0 15px;
+}
+.mynav__item--home {
+  background-color: #00ffff;
+  border-color: #00ffff;
+  opacity: 0.8;
+}
+.mynav__item--home:hover {
+  background-color: #4dffa8;
+}
+.mynav__item--about {
+  background-color: #00ff00;
+  border-color: #00ff00;
+  opacity: 0.8;
+}
+.mynav__item--about:hover {
+  background-color: #0ee8ff;
+}
+.mynav__item--items {
+  background-color: #ffff00;
+  border-color: #ffff00;
+  opacity: 0.8;
+}
+.mynav__item--items:hover {
+  background-color: #ffa256;
+}
+.mynav__item--contact {
+  background-color: #00ffff;
+  border-color: #00ffff;
+  opacity: 0.8;
+}
+.mynav__item--contact:hover {
+  background-color: #ff7d96;
+}
+.mynav__link {
+  font-size: 17px;
+  color: darkblue;
+}
+.mynav__link:hover {
+  font-size: 19px;
+}
+.main {
+  padding: 40px 0;
+}
+.main__content {
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+  margin: 0 auto;
+}
+.main__tile {
+  padding: 20px;
+  width: 18%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.main__tile--danger .main__header,
+.main__tile--danger .main__plus {
+  color: #ff1744;
+}
+.main__tile--danger {
+  background-color: #00ffff;
+  border-color: #00ffff;
+}
+.main__tile--success .main__header,
+.main__tile--success .main__plus {
+  color: #00e676;
+}
+.main__tile--success {
+  background-color: #efffa7;
+  border-color: #efffa7;
+}
+.main__tile--warning .main__header,
+.main__tile--warning .main__plus {
+  color: #ef6c00;
+}
+.main__tile--warning {
+  background-color: #fffdba;
+  border-color: #fffdba;
+}
+.main__tile--primary .main__header,
+.main__tile--primary .main__plus {
+  color: #0097a7;
+}
+.main__tile--primary {
+  background-color: #ff8344;
+  border-color: #ff8344;
+}
+.main__header {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.main__features {
+  list-style: none;
+  margin: 0 0 40px 0;
+  padding: 0 0 0 20px;
+}
+.main__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.main__footer {
+  text-align: center;
+}
+.main__button {
+  outline: 0;
+  padding: 8px 20px;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: 15px;
+  background: transparent;
+}
+.main__button--danger {
+  border-color: #ff1744;
+  border-radius: 50%;
+}
+.main__button--danger:hover {
+  background: #ff1744;
+  color: #fff;
+  transform: scale(1.1);
+  cursor: cell;
+}
+.main__button--danger {
+  background-color: #fffdba;
+  border-color: #fffdba;
+}
+.main__button--success {
+  border-color: #00e676;
+  border-radius: 50%;
+}
+.main__button--success:hover {
+  background: #00e676;
+  color: #fff;
+  transform: scale(1.1);
+  cursor: cell;
+}
+.main__button--success {
+  background-color: #00ffff;
+  border-color: #00ffff;
+}
+.main__button--primary {
+  border-color: #0097a7;
+  border-radius: 50%;
+}
+.main__button--primary:hover {
+  background: #0097a7;
+  color: #fff;
+  transform: scale(1.1);
+  cursor: cell;
+}
+.main__button--primary {
+  background-color: #efffa7;
+  border-color: #efffa7;
+}
+.main__button--warning {
+  border-color: #ef6c00;
+  border-radius: 50%;
+}
+.main__button--warning:hover {
+  background: #ef6c00;
+  color: #fff;
+  transform: scale(1.1);
+  cursor: cell;
+}
+.main__button--warning {
+  background-color: #ff8344;
+  border-color: #ff8344;
+}
